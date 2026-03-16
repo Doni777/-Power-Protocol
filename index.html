@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power Protocol — $POWER | Unified Gaming & Entertainment Infrastructure on Ronin</title>
+<meta name="description" content="Power Protocol ($POWER) is the unified economic and infrastructure layer for blockchain entertainment. 380,000+ players. Fableborne flagship game. Built on Ronin. Listed Binance Alpha, Bitget, MEXC. Connect wallet and claim $POWER today.">
+<meta name="keywords" content="Power Protocol, POWER token, Power Protocol crypto, buy POWER, POWER price, Power Protocol airdrop, POWER claim, Fableborne, Power Protocol GameFi, POWER Ronin, Power Protocol staking, POWER governance, Power Labs, blockchain gaming, POWER Binance Alpha, Power Protocol MEXC, POWER Bitget, GameFi token, web3 gaming, POWER token 2025, Power Protocol ecosystem">
+<meta name="author" content="Power Protocol">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Power Protocol — $POWER | Blockchain Entertainment Infrastructure">
+<meta property="og:description" content="The unified economic layer for blockchain entertainment. 380K+ players, $1.1M revenue, ATH $2.56. Connect wallet and claim $POWER.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://powerprotocol.io">
+<meta property="og:image" content="https://powerprotocol.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Power Protocol $POWER — Blockchain Entertainment Unified">
+<meta name="twitter:description" content="Modular GameFi infrastructure. 380K+ beta players. OpenSea integrated. $3M Bitkraft backed. Claim $POWER now.">
+<link rel="canonical" href="https://powerprotocol.io">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300e5ff'/%3E%3Cstop offset='100%25' stop-color='%237b00ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' fill='%230a0010'/%3E%3Cpolygon points='34,8 18,34 30,34 28,56 46,30 34,30' fill='url(%23g)'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Power Protocol",
+  "url": "https://powerprotocol.io",
+  "description": "Power Protocol is the unified economic and infrastructure layer for blockchain gaming and entertainment, powered by $POWER on Ronin.",
+  "keywords": "Power Protocol, POWER, GameFi, blockchain gaming, Fableborne, Ronin, DeFi, staking"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:     #06000f;
+  --bg2:    #0a0018;
+  --card:   #0e0020;
+  --card2:  #150030;
+  --border: rgba(0, 200, 255, 0.1);
+  --border2:rgba(0, 200, 255, 0.22);
+  --cyan:   #00c8ff;
+  --cyan2:  #7df9ff;
+  --violet: #7b00ff;
+  --violet2:#a855f7;
+  --neon:   #39ff14;
+  --neon2:  #80ff44;
+  --orange: #ff6a00;
+  --red:    #ff2244;
+  --white:  #e8f4ff;
+  --muted:  #4a3a70;
+  --dim:    #1e0a40;
+  --font-h: 'Exo 2', sans-serif;
+  --font-m: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font-h);
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+::selection { background: var(--cyan); color: #000; }
+a { color: inherit; text-decoration: none; }
+
+canvas#bgc {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+}
+
+.wrap { position: relative; z-index: 1; }
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 300;
+  height: 72px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 48px;
+  background: rgba(6, 0, 15, 0.78);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex; align-items: center; gap: 12px;
+  font-family: var(--font-h); font-size: 21px; font-weight: 900;
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+
+.logo-bolt {
+  width: 36px; height: 36px; border-radius: 8px;
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.4);
+}
+
+.logo-bolt svg { width: 20px; height: 20px; }
+
+.logo-text { background: linear-gradient(90deg, var(--cyan), var(--violet2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.nav-links {
+  display: flex; gap: 36px; list-style: none;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+.nav-links a { color: var(--muted); transition: color 0.2s; }
+.nav-links a:hover { color: var(--cyan); }
+
+.nav-actions { display: flex; gap: 10px; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 24px; border-radius: 6px;
+  font-family: var(--font-h); font-size: 12px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer; border: none; transition: all 0.22s;
+  position: relative; overflow: hidden;
+}
+
+.btn-wire {
+  background: transparent;
+  border: 1px solid var(--border2);
+  color: var(--cyan);
+}
+.btn-wire:hover {
+  background: rgba(0, 200, 255, 0.07);
+  box-shadow: 0 0 16px rgba(0,200,255,0.2), inset 0 0 16px rgba(0,200,255,0.03);
+}
+
+.btn-power {
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
+  color: #fff; font-weight: 900;
+}
+.btn-power:hover {
+  box-shadow: 0 0 32px rgba(0,200,255,0.5), 0 0 64px rgba(123,0,255,0.25);
+  transform: translateY(-1px);
+}
+
+.btn-neon {
+  background: transparent;
+  border: 1px solid var(--neon);
+  color: var(--neon);
+}
+.btn-neon:hover {
+  background: rgba(57,255,20,0.07);
+  box-shadow: 0 0 16px rgba(57,255,20,0.25);
+}
+
+.btn-violet {
+  background: linear-gradient(135deg, var(--violet) 0%, var(--violet2) 100%);
+  color: #fff; font-weight: 700;
+}
+.btn-violet:hover { box-shadow: 0 0 24px rgba(123,0,255,0.45); transform: translateY(-1px); }
+
+.btn-lg { padding: 15px 36px; font-size: 13px; border-radius: 8px; }
+.btn-xl { padding: 18px 48px; font-size: 14px; border-radius: 8px; }
+
+.hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; text-align: center;
+  padding: 120px 24px 80px;
+  position: relative; overflow: hidden;
+}
+
+.hero-bg-grid {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+}
+
+.hero-bg-grid::before {
+  content: '';
+  position: absolute; inset: -50%;
+  background-image:
+    linear-gradient(rgba(0,200,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,200,255,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  transform: perspective(500px) rotateX(30deg);
+  transform-origin: center bottom;
+}
+
+.hero-glow-1 {
+  position: absolute; top: 10%; left: 30%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(0,200,255,0.08), transparent 60%);
+  pointer-events: none;
+}
+.hero-glow-2 {
+  position: absolute; top: 20%; right: 20%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(123,0,255,0.07), transparent 60%);
+  pointer-events: none;
+}
+
+.hero-chip {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 7px 20px;
+  background: rgba(0,200,255,0.06);
+  border: 1px solid var(--border2);
+  border-radius: 100px;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--cyan); margin-bottom: 28px;
+  animation: fadeUp 0.6s ease both;
+}
+
+.chip-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--neon); animation: blink 1.5s infinite; }
+@keyframes blink { 0%,100%{opacity:1;box-shadow:0 0 6px var(--neon)} 50%{opacity:0.3;box-shadow:none} }
+
+.hero-title {
+  font-family: var(--font-h);
+  font-size: clamp(54px, 8.5vw, 116px);
+  font-weight: 900; line-height: 0.9; letter-spacing: -2px;
+  margin-bottom: 12px;
+  animation: fadeUp 0.7s 0.1s ease both;
+}
+
+.hero-title .w1 { display: block; color: var(--white); }
+.hero-title .w2 {
+  display: block;
+  background: linear-gradient(125deg, var(--cyan) 0%, var(--violet2) 50%, var(--cyan2) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.hero-title .w3 { display: block; font-style: italic; font-weight: 300; color: rgba(232,244,255,0.35); font-size: 0.6em; letter-spacing: 0px; }
+
+.hero-sub {
+  font-size: 17px; color: var(--muted); max-width: 580px;
+  margin: 0 auto 44px; line-height: 1.85; font-weight: 400;
+  animation: fadeUp 0.7s 0.18s ease both;
+}
+.hero-sub strong { color: var(--cyan); font-weight: 700; }
+
+.hero-btns {
+  display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+  margin-bottom: 70px;
+  animation: fadeUp 0.7s 0.25s ease both;
+}
+
+.stats-row {
+  display: flex; gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden;
+  background: rgba(6,0,15,0.9); backdrop-filter: blur(16px);
+  animation: fadeUp 0.7s 0.34s ease both;
+}
+
+.st {
+  padding: 22px 36px; text-align: center;
+  border-right: 1px solid var(--border); position: relative;
+}
+.st:last-child { border-right: none; }
+.st::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  opacity: 0.5;
+}
+.st-v {
+  font-family: var(--font-h); font-size: 28px; font-weight: 900;
+  color: var(--cyan); display: block; line-height: 1; margin-bottom: 5px;
+}
+.st-l { font-family: var(--font-m); font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
+
+.ticker-bar {
+  overflow: hidden; white-space: nowrap;
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: 12px 0; background: rgba(0,200,255,0.02);
+}
+.ticker-track { display: inline-flex; animation: roll 32s linear infinite; }
+.tick {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 0 40px; border-right: 1px solid var(--border);
+  font-family: var(--font-m); font-size: 12px; color: var(--muted);
+}
+.tick .s { color: var(--cyan); font-weight: 700; }
+.tick .u { color: var(--neon); }
+.tick .d { color: var(--red); }
+@keyframes roll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+section { padding: 106px 48px; }
+.container { max-width: 1280px; margin: 0 auto; }
+
+.eyebrow {
+  font-family: var(--font-m); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.16em; color: var(--cyan); font-weight: 700;
+  display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
+}
+.eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--cyan); }
+
+.s-title {
+  font-family: var(--font-h);
+  font-size: clamp(36px, 5vw, 62px);
+  font-weight: 900; line-height: 1.0; letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.s-sub { color: var(--muted); font-size: 16px; max-width: 520px; line-height: 1.85; }
+
+.infra-section { background: var(--bg2); border-top: 1px solid var(--border); }
+
+.infra-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--border); border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden; margin-top: 64px;
+}
+
+.infra-card {
+  background: var(--card); padding: 44px 36px;
+  position: relative; overflow: hidden; transition: background 0.3s;
+}
+.infra-card:hover { background: var(--card2); }
+
+.infra-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+}
+.infra-card:nth-child(1)::before { background: linear-gradient(90deg, var(--cyan), transparent); }
+.infra-card:nth-child(2)::before { background: linear-gradient(90deg, var(--violet), transparent); }
+.infra-card:nth-child(3)::before { background: linear-gradient(90deg, var(--neon), transparent); }
+
+.infra-icon {
+  width: 56px; height: 56px; border-radius: 12px;
+  border: 1px solid var(--border2); margin-bottom: 28px;
+  display: flex; align-items: center; justify-content: center; font-size: 26px;
+  background: rgba(0,200,255,0.05);
+}
+
+.infra-card h3 { font-family: var(--font-h); font-size: 22px; font-weight: 800; margin-bottom: 12px; }
+.infra-card p { font-size: 14px; color: var(--muted); line-height: 1.85; }
+
+.infra-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 20px; padding: 5px 14px;
+  border-radius: 100px; background: rgba(0,200,255,0.06);
+  border: 1px solid var(--border2);
+  font-family: var(--font-m); font-size: 10px; color: var(--cyan);
+  text-transform: uppercase; letter-spacing: 0.1em;
+}
+
+.game-section { background: var(--bg); }
+
+.game-split { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+
+.game-visual {
+  border: 1px solid var(--border2); border-radius: 16px; overflow: hidden;
+  background: var(--card2); position: relative;
+}
+
+.game-header {
+  padding: 18px 24px; border-bottom: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(0,200,255,0.03);
+}
+
+.game-title { font-family: var(--font-h); font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--cyan); }
+
+.live-chip {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--font-m); font-size: 10px; color: var(--neon); font-weight: 700;
+}
+
+.fableborne-art {
+  width: 100%; padding: 32px;
+  background: linear-gradient(135deg, #06000f 0%, #150030 50%, #06000f 100%);
+  min-height: 260px; position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.fableborne-art::before {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 60%;
+  background: linear-gradient(to top, rgba(0,200,255,0.05), transparent);
+}
+
+.fable-svg { width: 100%; max-width: 380px; }
+
+.game-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-top: 1px solid var(--border); }
+
+.game-metric {
+  background: var(--card); padding: 18px 22px;
+}
+.gm-v { font-family: var(--font-h); font-size: 22px; font-weight: 900; color: var(--cyan); display: block; line-height: 1; margin-bottom: 4px; }
+.gm-l { font-family: var(--font-m); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+
+.feat-list { display: flex; flex-direction: column; gap: 18px; margin-top: 44px; }
+.feat-item {
+  display: flex; gap: 20px; padding: 24px;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 10px; transition: all 0.3s;
+}
+.feat-item:hover { border-color: var(--cyan2); background: var(--card2); box-shadow: 0 0 24px rgba(0,200,255,0.07); transform: translateX(4px); }
+
+.feat-icon {
+  width: 48px; height: 48px; border-radius: 10px; flex-shrink: 0;
+  background: rgba(0,200,255,0.08); border: 1px solid var(--border2);
+  display: flex; align-items: center; justify-content: center; font-size: 22px;
+}
+.feat-item h4 { font-family: var(--font-h); font-size: 16px; font-weight: 800; margin-bottom: 4px; }
+.feat-item p { font-size: 13px; color: var(--muted); line-height: 1.8; }
+
+.token-section { background: var(--bg2); border-top: 1px solid var(--border); }
+
+.token-layout { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; margin-top: 64px; align-items: start; }
+
+.tstat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
+
+.tstat-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 22px 20px; transition: all 0.3s;
+}
+.tstat-card:hover { border-color: var(--cyan); background: var(--card2); }
+
+.tstat-icon { font-size: 22px; margin-bottom: 10px; display: block; }
+.tstat-val { font-family: var(--font-h); font-size: 22px; font-weight: 900; display: block; line-height: 1; margin-bottom: 4px; }
+.tstat-lbl { font-family: var(--font-m); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+
+.uses-list { margin-top: 24px; display: flex; flex-direction: column; gap: 10px; }
+.use-row {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 18px; background: var(--card);
+  border: 1px solid var(--border); border-radius: 8px;
+  font-size: 14px; transition: all 0.2s;
+}
+.use-row:hover { border-color: var(--violet2); background: var(--card2); }
+.use-ico { font-size: 18px; flex-shrink: 0; }
+.use-row span { color: var(--muted); font-size: 12px; margin-left: auto; font-family: var(--font-m); }
+
+.alloc-section-inner { }
+
+.alloc-title { font-family: var(--font-h); font-size: 18px; font-weight: 700; color: var(--cyan); margin-bottom: 20px; }
+
+.alloc-row {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 12px;
+}
+.alloc-bar-track {
+  flex: 1; height: 6px; background: var(--dim); border-radius: 100px; overflow: hidden;
+}
+.alloc-fill { height: 100%; border-radius: 100px; transition: width 1.4s ease; }
+.alloc-name { width: 160px; font-size: 13px; color: var(--muted); flex-shrink: 0; }
+.alloc-pct { width: 40px; text-align: right; font-family: var(--font-m); font-size: 12px; color: var(--white); flex-shrink: 0; }
+
+.contract-block {
+  margin-top: 28px; padding: 18px 22px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+}
+.contract-label { font-family: var(--font-m); font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 8px; }
+.contract-addr-row { display: flex; align-items: center; gap: 10px; }
+.contract-addr { font-family: var(--font-m); font-size: 11px; color: var(--cyan); flex: 1; word-break: break-all; }
+.copy-btn {
+  background: rgba(0,200,255,0.08); border: 1px solid var(--border2);
+  color: var(--cyan); border-radius: 6px; padding: 6px 14px;
+  font-family: var(--font-m); font-size: 11px; cursor: pointer; white-space: nowrap; transition: all 0.2s;
+  font-weight: 700;
+}
+.copy-btn:hover { background: rgba(0,200,255,0.15); }
+
+.claim-section {
+  background: var(--bg); border-top: 1px solid var(--border);
+  position: relative; overflow: hidden;
+}
+
+.claim-section::before {
+  content: '';
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 800px; height: 600px;
+  background: radial-gradient(ellipse, rgba(0,200,255,0.05), rgba(123,0,255,0.03) 40%, transparent 65%);
+  pointer-events: none;
+}
+
+.claim-card {
+  max-width: 760px; margin: 60px auto 0;
+  background: var(--card2); border: 1px solid var(--border2);
+  border-radius: 16px; overflow: hidden; position: relative; z-index: 1;
+}
+
+.claim-top { padding: 44px 56px 0; text-align: center; }
+.claim-top h2 { font-family: var(--font-h); font-size: 38px; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 10px; }
+.claim-top p { font-size: 14px; color: var(--muted); font-family: var(--font-m); }
+
+.claim-tiers {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  background: var(--border); margin-top: 36px;
+}
+.ct {
+  background: var(--card); padding: 22px;
+  text-align: center; position: relative;
+}
+.ct::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+}
+.ct:nth-child(1)::before { background: var(--neon); }
+.ct:nth-child(2)::before { background: var(--cyan); }
+.ct:nth-child(3)::before { background: var(--violet2); }
+
+.ct-name { font-family: var(--font-m); font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 8px; }
+.ct-val { font-family: var(--font-h); font-size: 26px; font-weight: 900; display: block; }
+.ct:nth-child(1) .ct-val { color: var(--neon); }
+.ct:nth-child(2) .ct-val { color: var(--cyan); }
+.ct:nth-child(3) .ct-val { color: var(--violet2); }
+.ct-req { font-family: var(--font-m); font-size: 10px; color: var(--muted); margin-top: 4px; }
+
+.claim-body { padding: 36px 56px 52px; }
+.input-row { display: flex; gap: 10px; margin-bottom: 24px; }
+.w-input {
+  flex: 1; background: var(--bg);
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px 20px; font-family: var(--font-m); font-size: 13px;
+  color: var(--white); outline: none; transition: border-color 0.2s;
+}
+.w-input::placeholder { color: var(--muted); }
+.w-input:focus { border-color: var(--cyan); }
+
+.claim-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.claim-note { margin-top: 18px; text-align: center; font-family: var(--font-m); font-size: 11px; color: var(--muted); }
+.claim-note a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
+
+.exchanges-section { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 60px 48px; }
+
+.exc-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 44px; }
+
+.exc-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 20px 16px; text-align: center; cursor: pointer; transition: all 0.25s;
+}
+.exc-card:hover { border-color: var(--cyan); background: var(--card2); box-shadow: 0 0 20px rgba(0,200,255,0.1); transform: translateY(-3px); }
+
+.exc-icon { font-size: 26px; margin-bottom: 10px; display: block; }
+.exc-name { font-family: var(--font-h); font-size: 14px; font-weight: 800; margin-bottom: 3px; }
+.exc-pair { font-family: var(--font-m); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.roadmap-section { background: var(--bg); border-top: 1px solid var(--border); }
+
+.rm-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 64px; }
+
+.rm-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 32px 28px; position: relative; overflow: hidden;
+  transition: all 0.3s;
+}
+.rm-card:hover { border-color: rgba(0,200,255,0.25); background: var(--card2); transform: translateY(-4px); }
+
+.rm-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+}
+.rm-card.done::before { background: linear-gradient(90deg, var(--neon), transparent); }
+.rm-card.live::before { background: linear-gradient(90deg, var(--cyan), var(--violet2)); animation: shimmer 2s infinite; }
+.rm-card.soon::before { background: linear-gradient(90deg, var(--muted), transparent); }
+
+@keyframes shimmer { 0%{opacity:0.5} 50%{opacity:1} 100%{opacity:0.5} }
+
+.rm-status {
+  font-family: var(--font-m); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.12em; margin-bottom: 14px;
+  display: flex; align-items: center; gap: 6px;
+}
+.rm-card.done .rm-status { color: var(--neon); }
+.rm-card.live .rm-status { color: var(--cyan); }
+.rm-card.soon .rm-status { color: var(--muted); }
+
+.rm-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.rm-dot.pulse { animation: blink 1.5s infinite; }
+
+.rm-card h3 { font-family: var(--font-h); font-size: 18px; font-weight: 800; margin-bottom: 14px; }
+.rm-card ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.rm-card ul li {
+  font-size: 12px; color: var(--muted); padding-left: 16px; position: relative;
+  font-family: var(--font-m);
+}
+.rm-card ul li::before { content: '›'; position: absolute; left: 0; color: var(--cyan); font-weight: 700; }
+
+.partners-section { background: var(--bg2); border-top: 1px solid var(--border); padding: 56px 48px; }
+
+.partners-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+.partners-label { font-family: var(--font-m); font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-bottom: 36px; }
+.partners-logos { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
+.partner-name { font-family: var(--font-h); font-size: 16px; font-weight: 700; color: var(--dim); transition: color 0.2s; }
+.partner-name:hover { color: var(--muted); }
+
+.faq-section { background: var(--bg); border-top: 1px solid var(--border); }
+
+.faq-list { margin-top: 56px; display: flex; flex-direction: column; gap: 3px; }
+
+.faq-item {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+}
+
+.faq-btn {
+  width: 100%; background: none; border: none; padding: 22px 30px;
+  text-align: left; font-family: var(--font-h); font-size: 15px; font-weight: 600;
+  color: var(--white); cursor: pointer; display: flex; justify-content: space-between;
+  align-items: center; gap: 14px; transition: color 0.2s;
+}
+.faq-btn:hover { color: var(--cyan); }
+.faq-item.open .faq-btn { color: var(--cyan); }
+
+.faq-chevron {
+  width: 18px; height: 18px; color: var(--muted); flex-shrink: 0;
+  transition: transform 0.3s;
+}
+.faq-item.open .faq-chevron { transform: rotate(180deg); color: var(--cyan); }
+
+.faq-body {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 30px; font-size: 14px; color: var(--muted); line-height: 1.85;
+  font-weight: 400;
+}
+.faq-item.open .faq-body { max-height: 200px; padding: 0 30px 22px; }
+
+.cta-section {
+  background: var(--bg2); border-top: 1px solid var(--border);
+  text-align: center; padding: 110px 48px; position: relative; overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute; bottom: -120px; left: 50%; transform: translateX(-50%);
+  width: 1000px; height: 600px;
+  background: radial-gradient(ellipse, rgba(0,200,255,0.06), rgba(123,0,255,0.04) 40%, transparent 65%);
+  pointer-events: none;
+}
+
+.cta-power-icon {
+  font-size: 56px; margin-bottom: 20px; display: block;
+  animation: powerFlicker 2s infinite alternate;
+}
+@keyframes powerFlicker { from{filter:drop-shadow(0 0 10px var(--cyan))} to{filter:drop-shadow(0 0 28px var(--cyan)) drop-shadow(0 0 8px var(--violet2))} }
+
+.cta-title {
+  font-family: var(--font-h);
+  font-size: clamp(48px, 7.5vw, 96px);
+  font-weight: 900; line-height: 0.9; letter-spacing: -2px;
+  margin-bottom: 20px; position: relative; z-index: 1;
+}
+.cta-title span {
+  background: linear-gradient(125deg, var(--cyan), var(--violet2), var(--cyan2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+.cta-sub { color: var(--muted); font-size: 16px; margin-bottom: 40px; font-weight: 400; position: relative; z-index: 1; }
+.cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+
+footer {
+  background: var(--bg); border-top: 1px solid var(--border);
+  padding: 64px 48px 40px;
+}
+
+.footer-grid {
+  max-width: 1280px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px;
+  margin-bottom: 56px;
+}
+
+.footer-brand p { font-size: 13px; color: var(--muted); margin-top: 16px; max-width: 280px; line-height: 1.85; font-weight: 400; }
+
+.footer-col h4 {
+  font-family: var(--font-m); font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 20px;
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.footer-col ul li a { font-size: 13px; color: var(--muted); transition: color 0.2s; font-weight: 400; }
+.footer-col ul li a:hover { color: var(--cyan); }
+
+.footer-bottom {
+  max-width: 1280px; margin: 0 auto;
+  border-top: 1px solid var(--border); padding-top: 28px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--font-m); font-size: 11px; color: var(--muted);
+}
+
+.soc-row { display: flex; gap: 10px; }
+.soc {
+  width: 34px; height: 34px; border: 1px solid var(--border); border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted); transition: all 0.2s;
+}
+.soc:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,200,255,0.06); }
+.soc svg { width: 14px; height: 14px; }
+
+.modal-bg {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(6,0,15,0.92); backdrop-filter: blur(20px);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.modal-bg.show { opacity: 1; pointer-events: all; }
+
+.modal {
+  background: var(--card2); border: 1px solid var(--border2); border-radius: 16px;
+  padding: 44px; max-width: 450px; width: 92%;
+  text-align: center; position: relative;
+  transform: translateY(20px); transition: transform 0.3s;
+}
+.modal-bg.show .modal { transform: none; }
+
+.m-close {
+  position: absolute; top: 14px; right: 14px; background: none;
+  border: none; color: var(--muted); cursor: pointer; padding: 8px; border-radius: 6px; transition: color 0.2s;
+}
+.m-close:hover { color: var(--white); }
+
+.modal h2 { font-family: var(--font-h); font-size: 26px; font-weight: 900; margin-bottom: 8px; }
+.modal p { font-family: var(--font-m); font-size: 12px; color: var(--muted); margin-bottom: 28px; }
+
+.w-opts { display: flex; flex-direction: column; gap: 10px; }
+.w-opt {
+  display: flex; align-items: center; gap: 16px; padding: 14px 18px;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+  cursor: pointer; transition: all 0.2s; text-align: left;
+}
+.w-opt:hover { border-color: var(--cyan); background: rgba(0,200,255,0.04); }
+.w-ico { width: 38px; height: 38px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.w-name { font-family: var(--font-h); font-weight: 700; font-size: 14px; }
+.w-type { font-family: var(--font-m); font-size: 10px; color: var(--muted); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.06em; }
+.w-arr { margin-left: auto; color: var(--muted); width: 14px; height: 14px; }
+
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.on { opacity: 1; transform: none; }
+
+@keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+
+@media (max-width: 960px) {
+  nav { padding: 0 20px; }
+  .nav-links { display: none; }
+  section { padding: 64px 20px; }
+  .hero { padding: 100px 20px 60px; }
+  .infra-grid { grid-template-columns: 1fr; }
+  .game-split { grid-template-columns: 1fr; gap: 40px; }
+  .token-layout { grid-template-columns: 1fr; }
+  .rm-grid { grid-template-columns: 1fr 1fr; }
+  .exc-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .stats-row { flex-wrap: wrap; border-radius: 0; }
+  .st { border-right: none; border-bottom: 1px solid var(--border); padding: 18px 24px; }
+  .claim-tiers { grid-template-columns: 1fr; }
+  .claim-top { padding: 32px 24px 0; }
+  .claim-body { padding: 28px 24px 40px; }
+  .input-row { flex-direction: column; }
+  .exchanges-section { padding: 48px 20px; }
+  .partners-section { padding: 48px 20px; }
+  .tstat-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="bgc"></canvas>
+
+<div class="wrap">
+
+<nav>
+  <div class="logo">
+    <div class="logo-bolt">
+      <svg viewBox="0 0 20 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="12,1 4,13 10,13 8,23 18,11 12,11"/>
+      </svg>
+    </div>
+    <span class="logo-text">Power Protocol</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#infra">Infrastructure</a></li>
+    <li><a href="#game">Fableborne</a></li>
+    <li><a href="#token">$POWER</a></li>
+    <li><a href="#claim">Claim</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="btn btn-wire" onclick="openModal()">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+      Connect
+    </button>
+    <a href="#claim" class="btn btn-power">⚡ Claim $POWER</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+
+  <div class="hero-chip">
+    <span class="chip-dot"></span>
+    Live · Binance Alpha · Bitget · MEXC · Bybit
+  </div>
+
+  <h1 class="hero-title">
+    <span class="w1">POWER</span>
+    <span class="w2">THE GAME.</span>
+    <span class="w3">Own the Economy.</span>
+  </h1>
+
+  <p class="hero-sub">
+    <strong>Power Protocol</strong> is the unified economic and infrastructure layer for blockchain entertainment. One protocol. Every game. <strong>380,000+ players</strong> already in the ecosystem.
+  </p>
+
+  <div class="hero-btns">
+    <button class="btn btn-power btn-lg" onclick="openModal()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+      Connect Wallet
+    </button>
+    <a href="#claim" class="btn btn-neon btn-lg">⚡ Claim Airdrop</a>
+    <a href="#game" class="btn btn-wire btn-lg">Play Fableborne</a>
+  </div>
+
+  <div class="stats-row">
+    <div class="st">
+      <span class="st-v">$2.56</span>
+      <span class="st-l">All-Time High</span>
+    </div>
+    <div class="st">
+      <span class="st-v">380K+</span>
+      <span class="st-l">Beta Players</span>
+    </div>
+    <div class="st">
+      <span class="st-v">$1.1M</span>
+      <span class="st-l">Beta Revenue</span>
+    </div>
+    <div class="st">
+      <span class="st-v">$3M</span>
+      <span class="st-l">Bitkraft Funding</span>
+    </div>
+    <div class="st">
+      <span class="st-v">1B</span>
+      <span class="st-l">Max Supply</span>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <div class="tick"><span class="s">$POWER</span> ATH $2.56 Feb 26, 2026</div>
+    <div class="tick"><span class="s">VOLUME</span> $23M+ 24h</div>
+    <div class="tick"><span class="s">PLAYERS</span> 380,000+ Fableborne beta</div>
+    <div class="tick"><span class="s">BITKRAFT</span> $3M funding ✓</div>
+    <div class="tick"><span class="s">OPENSEA</span> $POWER payment integrated</div>
+    <div class="tick"><span class="s">BINANCE ALPHA</span> Listed Dec 5, 2025</div>
+    <div class="tick"><span class="s">RONIN</span> Built on Ronin App Chain</div>
+    <div class="tick"><span class="s">PEAK DAU</span> 108,000 daily active users</div>
+    <div class="tick"><span class="s">$POWER</span> ATH $2.56 Feb 26, 2026</div>
+    <div class="tick"><span class="s">VOLUME</span> $23M+ 24h</div>
+    <div class="tick"><span class="s">PLAYERS</span> 380,000+ Fableborne beta</div>
+    <div class="tick"><span class="s">BITKRAFT</span> $3M funding ✓</div>
+    <div class="tick"><span class="s">OPENSEA</span> $POWER payment integrated</div>
+    <div class="tick"><span class="s">BINANCE ALPHA</span> Listed Dec 5, 2025</div>
+    <div class="tick"><span class="s">RONIN</span> Built on Ronin App Chain</div>
+    <div class="tick"><span class="s">PEAK DAU</span> 108,000 daily active users</div>
+  </div>
+</div>
+
+<section id="infra" class="infra-section">
+  <div class="container">
+    <div style="max-width:580px;">
+      <p class="eyebrow reveal">Infrastructure</p>
+      <h2 class="s-title reveal">One Protocol.<br>Every Experience.</h2>
+      <p class="s-sub reveal">Power Protocol provides the programmable engagement and economic layer that any app, game, or entertainment product can integrate — removing blockchain complexity for builders and players.</p>
+    </div>
+    <div class="infra-grid reveal">
+      <div class="infra-card">
+        <div class="infra-icon">⚙️</div>
+        <h3>Modular Incentive Protocol</h3>
+        <p>Plug-and-play APIs that handle on-chain reward routing, value accrual, staking systems, and cross-application economic logic. Builders integrate power — they don't build it from scratch.</p>
+        <span class="infra-tag">SDK · APIs · Reward Routing</span>
+      </div>
+      <div class="infra-card">
+        <div class="infra-icon">⛓️</div>
+        <h3>Power App Chain (Ronin)</h3>
+        <p>A low-fee, high-throughput app chain built on Ronin network. Optimized for consumer-grade gaming traffic with sub-second finality and gas costs that disappear at scale.</p>
+        <span class="infra-tag">Ronin · Low-Fee · High TPS</span>
+      </div>
+      <div class="infra-card">
+        <div class="infra-icon">🏗️</div>
+        <h3>Power Labs · Accelerator</h3>
+        <p>Selective accelerator program for game studios and builders integrating Power Protocol. Technical advisory, funding support, and direct ecosystem exposure for qualifying teams.</p>
+        <span class="infra-tag">Power Labs · Grants · Advisory</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="game" class="game-section">
+  <div class="container">
+    <div class="game-split">
+      <div>
+        <p class="eyebrow reveal">Flagship Game</p>
+        <h2 class="s-title reveal">Fableborne.<br>Proof of Power.</h2>
+        <p class="s-sub reveal">The first live application in the Power ecosystem. A mobile action-strategy game by Pixion Games with real user traction, real revenue, and real on-chain activity powering the protocol.</p>
+        <div class="feat-list reveal">
+          <div class="feat-item">
+            <div class="feat-icon">🎮</div>
+            <div>
+              <h4>380,000+ Beta Players</h4>
+              <p>Across multiple testing phases, Fableborne proved market readiness with one of the largest pre-launch GameFi user bases in history.</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon">💰</div>
+            <div>
+              <h4>$1.1M Open Beta Revenue</h4>
+              <p>Real money, real transactions, real utility — not speculation. Revenue generated during open beta validates Power Protocol's economic model.</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon">🔗</div>
+            <div>
+              <h4>OpenSea Integration</h4>
+              <p>$POWER is accepted as a direct payment method on OpenSea for NFTs — expanding token utility beyond the gaming ecosystem into the broader Web3 economy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="game-visual">
+          <div class="game-header">
+            <span class="game-title">Fableborne · Live</span>
+            <div class="live-chip"><span class="chip-dot"></span> Active</div>
+          </div>
+          <div class="fableborne-art">
+            <svg class="fable-svg" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="sky" cx="50%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#150030"/>
+                  <stop offset="100%" stop-color="#06000f"/>
+                </radialGradient>
+                <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#1a0040"/>
+                  <stop offset="100%" stop-color="#06000f"/>
+                </linearGradient>
+                <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#00c8ff" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+                <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#7b00ff" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+                <filter id="f1"><feGaussianBlur stdDeviation="4"/></filter>
+                <filter id="f2"><feGaussianBlur stdDeviation="2"/></filter>
+              </defs>
+              <rect width="400" height="260" fill="url(#sky)"/>
+              <ellipse cx="200" cy="100" rx="120" ry="80" fill="url(#glow1)" filter="url(#f1)" opacity="0.6"/>
+              <ellipse cx="280" cy="140" rx="80" ry="60" fill="url(#glow2)" filter="url(#f1)" opacity="0.5"/>
+              <rect x="0" y="200" width="400" height="60" fill="url(#ground)"/>
+              <polygon points="60,200 90,120 120,200" fill="#1a0040" stroke="rgba(0,200,255,0.3)" stroke-width="1"/>
+              <polygon points="90,200 130,100 170,200" fill="#1e0050" stroke="rgba(0,200,255,0.2)" stroke-width="1"/>
+              <polygon points="230,200 280,90 330,200" fill="#1a0040" stroke="rgba(123,0,255,0.3)" stroke-width="1"/>
+              <polygon points="300,200 340,120 380,200" fill="#150030" stroke="rgba(123,0,255,0.2)" stroke-width="1"/>
+              <rect x="175" y="145" width="50" height="55" rx="4" fill="#2a0060" stroke="rgba(0,200,255,0.5)" stroke-width="1.5"/>
+              <rect x="183" y="153" width="14" height="18" rx="2" fill="rgba(0,200,255,0.2)"/>
+              <rect x="203" y="153" width="14" height="18" rx="2" fill="rgba(0,200,255,0.2)"/>
+              <rect x="190" y="175" width="20" height="25" rx="2" fill="#150030"/>
+              <polygon points="175,145 200,125 225,145" fill="#1e0050" stroke="rgba(0,200,255,0.6)" stroke-width="1.5"/>
+              <polygon points="200,70 205,90 200,88 195,90" fill="#00c8ff" opacity="0.8" filter="url(#f2)"/>
+              <line x1="200" y1="90" x2="200" y2="125" stroke="rgba(0,200,255,0.4)" stroke-width="1" stroke-dasharray="3 4"/>
+              <polygon points="200,44 203,54 200,52 197,54" fill="#7b00ff" opacity="0.9" filter="url(#f2)"/>
+              <circle cx="200" cy="44" r="12" fill="none" stroke="rgba(0,200,255,0.5)" stroke-width="1" stroke-dasharray="4 4"/>
+              <circle cx="200" cy="44" r="6" fill="none" stroke="rgba(123,0,255,0.7)" stroke-width="1.5"/>
+              <circle cx="200" cy="44" r="2" fill="#00c8ff"/>
+              <circle cx="80" cy="40" r="2" fill="#00c8ff" opacity="0.6"/>
+              <circle cx="140" cy="25" r="1.5" fill="#7b00ff" opacity="0.7"/>
+              <circle cx="320" cy="35" r="2" fill="#00c8ff" opacity="0.5"/>
+              <circle cx="360" cy="55" r="1.5" fill="#7df9ff" opacity="0.6"/>
+              <circle cx="50" cy="60" r="1" fill="white" opacity="0.4"/>
+              <path d="M155,150 L160,155 L155,160" stroke="rgba(0,200,255,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M245,150 L240,155 L245,160" stroke="rgba(123,0,255,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <text x="200" y="246" text-anchor="middle" font-family="'Exo 2', sans-serif" font-size="11" font-weight="900" fill="rgba(0,200,255,0.6)" letter-spacing="4">FABLEBORNE</text>
+            </svg>
+          </div>
+          <div class="game-metrics">
+            <div class="game-metric">
+              <span class="gm-v">380K+</span>
+              <span class="gm-l">Total Players</span>
+            </div>
+            <div class="game-metric">
+              <span class="gm-v">108K</span>
+              <span class="gm-l">Peak Daily Active</span>
+            </div>
+            <div class="game-metric">
+              <span class="gm-v">$1.1M</span>
+              <span class="gm-l">Beta Revenue</span>
+            </div>
+            <div class="game-metric">
+              <span class="gm-v">Mobile</span>
+              <span class="gm-l">iOS + Android</span>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;">
+          <button class="btn btn-power" onclick="openModal()">Play Now</button>
+          <button class="btn btn-wire" onclick="openModal()">Earn $POWER In-Game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="token" class="token-section">
+  <div class="container">
+    <div style="max-width:540px;">
+      <p class="eyebrow reveal">Tokenomics</p>
+      <h2 class="s-title reveal">$POWER Token</h2>
+      <p class="s-sub reveal">The coordination layer connecting every application in the ecosystem to the same economic infrastructure — governance, staking, rewards, protocol fees, and seasonal systems.</p>
+    </div>
+    <div class="token-layout reveal">
+      <div>
+        <div class="tstat-grid">
+          <div class="tstat-card">
+            <span class="tstat-icon">⚡</span>
+            <span class="tstat-val" style="color:var(--cyan);">$2.56</span>
+            <span class="tstat-lbl">ATH Price</span>
+          </div>
+          <div class="tstat-card">
+            <span class="tstat-icon">🔥</span>
+            <span class="tstat-val" style="color:var(--neon);">2,972%</span>
+            <span class="tstat-lbl">Launch → ATH</span>
+          </div>
+          <div class="tstat-card">
+            <span class="tstat-icon">💎</span>
+            <span class="tstat-val">1,000,000,000</span>
+            <span class="tstat-lbl">Max Supply</span>
+          </div>
+          <div class="tstat-card">
+            <span class="tstat-icon">🔄</span>
+            <span class="tstat-val" style="color:var(--violet2);">210M</span>
+            <span class="tstat-lbl">Circulating</span>
+          </div>
+        </div>
+        <div class="uses-list">
+          <div class="use-row">
+            <span class="use-ico">🏛️</span>
+            <span>DAO Governance Voting</span>
+            <span>Protocol Control</span>
+          </div>
+          <div class="use-row">
+            <span class="use-ico">📈</span>
+            <span>Staking & Yield Rewards</span>
+            <span>Passive Income</span>
+          </div>
+          <div class="use-row">
+            <span class="use-ico">🎮</span>
+            <span>In-Game Reward Currency</span>
+            <span>Fableborne + Partners</span>
+          </div>
+          <div class="use-row">
+            <span class="use-ico">⚙️</span>
+            <span>Protocol Usage Fees</span>
+            <span>Economic Sink</span>
+          </div>
+          <div class="use-row">
+            <span class="use-ico">🛒</span>
+            <span>OpenSea NFT Payments</span>
+            <span>Live Integration</span>
+          </div>
+          <div class="use-row">
+            <span class="use-ico">🏆</span>
+            <span>Seasonal Competition Systems</span>
+            <span>Dynamic Rewards</span>
+          </div>
+        </div>
+        <div class="contract-block" style="margin-top:20px;">
+          <div class="contract-label">ETH Contract Address</div>
+          <div class="contract-addr-row">
+            <span class="contract-addr" id="cAddr">0x9dc44ae5be187eca9e2a67e33f27a4c91cea1223</span>
+            <button class="copy-btn" onclick="doCopy()">Copy</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="alloc-title">Token Allocation</div>
+        <div class="alloc-row">
+          <span class="alloc-name">Community Rewards</span>
+          <div class="alloc-bar-track"><div class="alloc-fill" style="width:37.2%;background:linear-gradient(90deg,var(--cyan),var(--cyan2));"></div></div>
+          <span class="alloc-pct">37.2%</span>
+        </div>
+        <div class="alloc-row">
+          <span class="alloc-name">Ecosystem Fund</span>
+          <div class="alloc-bar-track"><div class="alloc-fill" style="width:21%;background:linear-gradient(90deg,var(--violet),var(--violet2));"></div></div>
+          <span class="alloc-pct">21%</span>
+        </div>
+        <div class="alloc-row">
+          <span class="alloc-name">Investors</span>
+          <div class="alloc-bar-track"><div class="alloc-fill" style="width:16.15%;background:linear-gradient(90deg,var(--neon),var(--neon2));"></div></div>
+          <span class="alloc-pct">16.15%</span>
+        </div>
+        <div class="alloc-row">
+          <span class="alloc-name">Team</span>
+          <div class="alloc-bar-track"><div class="alloc-fill" style="width:15%;background:linear-gradient(90deg,var(--orange),#ffa040);"></div></div>
+          <span class="alloc-pct">15%</span>
+        </div>
+        <div class="alloc-row">
+          <span class="alloc-name">Treasury</span>
+          <div class="alloc-bar-track"><div class="alloc-fill" style="width:10.65%;background:linear-gradient(90deg,#a0a0ff,#c0b0ff);"></div></div>
+          <span class="alloc-pct">10.65%</span>
+        </div>
+        <div style="margin-top:28px;padding:22px;background:rgba(0,200,255,0.04);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:0 10px 10px 0;">
+          <p style="font-family:var(--font-m);font-size:11px;color:var(--cyan);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;font-weight:700;">Vesting Schedule</p>
+          <p style="font-size:13px;color:var(--muted);line-height:1.8;">Vesting extends 36–48 months from December 2025 launch. Community rewards unlock over 48 months. Ecosystem funds over 36 months. Investor tokens begin releasing in 2026.</p>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;">
+          <button class="btn btn-power" onclick="openModal()">Buy $POWER</button>
+          <a href="#claim" class="btn btn-wire">Claim Airdrop</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="exchanges-section">
+  <div class="container">
+    <div style="max-width:540px;margin-bottom:0;">
+      <p class="eyebrow reveal">Exchanges</p>
+      <h2 class="s-title reveal" style="font-size:clamp(28px,4vw,44px);">Buy $POWER On</h2>
+    </div>
+    <div class="exc-grid reveal">
+      <div class="exc-card" onclick="openModal()">
+        <span class="exc-icon">🟡</span>
+        <div class="exc-name">Binance Alpha</div>
+        <div class="exc-pair">POWER/USDT</div>
+      </div>
+      <div class="exc-card" onclick="openModal()">
+        <span class="exc-icon">🔵</span>
+        <div class="exc-name">Bitget</div>
+        <div class="exc-pair">POWER/USDT</div>
+      </div>
+      <div class="exc-card" onclick="openModal()">
+        <span class="exc-icon">🟠</span>
+        <div class="exc-name">MEXC</div>
+        <div class="exc-pair">POWER/USDT</div>
+      </div>
+      <div class="exc-card" onclick="openModal()">
+        <span class="exc-icon">🔶</span>
+        <div class="exc-name">Bybit</div>
+        <div class="exc-pair">POWER/USDT</div>
+      </div>
+      <div class="exc-card" onclick="openModal()">
+        <span class="exc-icon">🟢</span>
+        <div class="exc-name">LBank</div>
+        <div class="exc-pair">POWER/USDT</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="claim" class="claim-section">
+  <div class="container" style="text-align:center;">
+    <p class="eyebrow reveal" style="justify-content:center;">Airdrop</p>
+    <h2 class="s-title reveal">Claim $POWER</h2>
+    <p class="s-sub reveal" style="margin:0 auto 0;">Early community members, beta players, and Binance Alpha users are eligible for $POWER airdrop allocations. Connect wallet to verify.</p>
+    <div class="claim-card reveal">
+      <div class="claim-top">
+        <h2>⚡ $POWER Airdrop Claim</h2>
+        <p>SNAPSHOT · DEC 5, 2025 · ROLLING DISTRIBUTION</p>
+      </div>
+      <div class="claim-tiers">
+        <div class="ct">
+          <div class="ct-name">Beta Tier</div>
+          <span class="ct-val">500 POWER</span>
+          <div class="ct-req">Fableborne beta player</div>
+        </div>
+        <div class="ct">
+          <div class="ct-name">Alpha Tier</div>
+          <span class="ct-val">1,500 POWER</span>
+          <div class="ct-req">Binance Alpha · 200+ pts</div>
+        </div>
+        <div class="ct">
+          <div class="ct-name">OG Tier</div>
+          <span class="ct-val">5,000+ POWER</span>
+          <div class="ct-req">Power Labs early adopter</div>
+        </div>
+      </div>
+      <div class="claim-body">
+        <div class="input-row">
+          <input class="w-input" type="text" id="claimIn" placeholder="0x... enter wallet address to check eligibility"/>
+          <button class="btn btn-wire" onclick="checkElig()">Check</button>
+        </div>
+        <div class="claim-btns">
+          <button class="btn btn-power btn-lg" onclick="openModal()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            Connect & Claim
+          </button>
+          <button class="btn btn-neon btn-lg" onclick="openModal()">⚡ Claim $POWER</button>
+        </div>
+        <p class="claim-note">TGE Dec 5, 2025 · Listed Binance Alpha · <a href="#">Eligibility Rules ↗</a> · <a href="#">Whitepaper ↗</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" class="roadmap-section">
+  <div class="container">
+    <div style="max-width:520px;">
+      <p class="eyebrow reveal">Roadmap</p>
+      <h2 class="s-title reveal">From Game to<br>Global Infrastructure</h2>
+      <p class="s-sub reveal">A precise, phased mission — from Fableborne's proven traction to becoming the standard economic layer for all of blockchain entertainment.</p>
+    </div>
+    <div class="rm-grid reveal">
+      <div class="rm-card done">
+        <div class="rm-status"><div class="rm-dot"></div>Completed</div>
+        <h3>Genesis &amp; TGE</h3>
+        <ul>
+          <li>Whitepaper published Dec 3</li>
+          <li>TGE &amp; Binance Alpha Dec 5</li>
+          <li>Bitget + MEXC + LBank live</li>
+          <li>Fableborne beta proven</li>
+          <li>Power Protocol SDK v1</li>
+        </ul>
+      </div>
+      <div class="rm-card done">
+        <div class="rm-status"><div class="rm-dot"></div>Completed</div>
+        <h3>Exchange Expansion</h3>
+        <ul>
+          <li>Bybit listing live</li>
+          <li>OpenSea integration</li>
+          <li>ATH $2.56 reached Feb 26</li>
+          <li>Bitkraft $3M round closed</li>
+          <li>20x leverage futures live</li>
+        </ul>
+      </div>
+      <div class="rm-card live">
+        <div class="rm-status"><div class="rm-dot pulse"></div>Live Now</div>
+        <h3>Ecosystem Build</h3>
+        <ul>
+          <li>Fableborne full launch</li>
+          <li>Power App Chain (Ronin)</li>
+          <li>Partner studio onboarding</li>
+          <li>Power Labs accelerator</li>
+          <li>Cross-app reward routing</li>
+        </ul>
+      </div>
+      <div class="rm-card soon">
+        <div class="rm-status"><div class="rm-dot"></div>Upcoming</div>
+        <h3>Mass Scale</h3>
+        <ul>
+          <li>10+ games on protocol</li>
+          <li>AI-native entertainment</li>
+          <li>Top 3 CEX listings</li>
+          <li>DAO full governance</li>
+          <li>Cross-chain bridge</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="partners-section">
+  <div class="partners-inner">
+    <p class="partners-label reveal">Backed, Built &amp; Integrated With</p>
+    <div class="partners-logos reveal">
+      <span class="partner-name">Bitkraft Ventures</span>
+      <span class="partner-name">Pixion Games</span>
+      <span class="partner-name">Ronin Network</span>
+      <span class="partner-name">OpenSea</span>
+      <span class="partner-name">Binance Alpha</span>
+      <span class="partner-name">Bitget</span>
+      <span class="partner-name">CoinGecko</span>
+    </div>
+  </div>
+</div>
+
+<section id="faq" class="faq-section">
+  <div class="container">
+    <div style="max-width:500px;">
+      <p class="eyebrow reveal">FAQ</p>
+      <h2 class="s-title reveal">Questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-btn" onclick="togFaq(this)">
+          What is Power Protocol?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body">Power Protocol is the unified economic and infrastructure layer for blockchain entertainment. It provides a modular, programmable engagement and reward routing system that any game, app, or entertainment product can integrate. Its first application is Fableborne, a mobile action-strategy game by Pixion Games with 380,000+ beta players.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="togFaq(this)">
+          How does $POWER work?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body">$POWER is the native token of the Power ecosystem. It's used for staking, governance, protocol usage fees, in-app reward programs, and seasonal competition systems. It acts as the coordination layer connecting multiple applications to the same economic infrastructure without binding them to a single product. Max supply: 1 billion POWER.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="togFaq(this)">
+          What is Fableborne?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body">Fableborne is a mobile action-strategy game developed by Pixion Games and the first live application in the Power ecosystem. It achieved 380,000+ players, 108,000 peak daily active users, and $1.1M in revenue during its open beta — demonstrating genuine product-market fit for Power Protocol's economic model before the token launched.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="togFaq(this)">
+          What is the vesting schedule?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body">Vesting extends 36–48 months from the December 2025 launch. Community rewards (37.2%) unlock over 48 months. Ecosystem funds (21%) over 36 months. Investor tokens (16.15%) begin releasing in 2026. 72.8% of total supply remains locked, which represents both future dilution risk and upside if ecosystem growth outpaces supply expansion.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="togFaq(this)">
+          Where is $POWER listed and how do I buy it?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body">$POWER is live on Binance Alpha, Bitget, MEXC, Bybit, LBank, and PancakeSwap. Connect your wallet and use the Buy $POWER button above, or trade directly on any listed exchange using the POWER/USDT pair. Contract address on Ethereum: 0x9dc44ae5be187eca9e2a67e33f27a4c91cea1223.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <span class="cta-power-icon reveal">⚡</span>
+    <h2 class="cta-title reveal">
+      The Future is<br><span>Powered.</span>
+    </h2>
+    <p class="cta-sub reveal">Join 380,000+ players and holders already in the Power ecosystem</p>
+    <div class="cta-btns reveal">
+      <button class="btn btn-power btn-xl" onclick="openModal()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        Connect Wallet
+      </button>
+      <a href="#claim" class="btn btn-neon btn-xl">⚡ Claim Airdrop</a>
+      <a href="https://powerprotocol.io" target="_blank" rel="noopener" class="btn btn-wire btn-xl">Official Site ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-bolt"><svg viewBox="0 0 20 24" fill="white" width="18" height="22"><polygon points="12,1 4,13 10,13 8,23 18,11 12,11"/></svg></div>
+        <span class="logo-text">Power Protocol</span>
+      </div>
+      <p>Unified economic and infrastructure layer for blockchain entertainment. Powered by $POWER on Ronin. Built by Pixion Games &amp; Power Labs.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Protocol</h4>
+      <ul>
+        <li><a href="#infra">Infrastructure</a></li>
+        <li><a href="#game">Fableborne</a></li>
+        <li><a href="#token">$POWER Token</a></li>
+        <li><a href="#claim">Claim Airdrop</a></li>
+        <li><a href="#">Whitepaper</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Developers</h4>
+      <ul>
+        <li><a href="#">SDK Docs</a></li>
+        <li><a href="#">Power Labs</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Smart Contracts</a></li>
+        <li><a href="#">Apply for Grant</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Community</h4>
+      <ul>
+        <li><a href="#">Twitter @PowerPrtcl</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">CoinGecko ↗</a></li>
+        <li><a href="#">CMC ↗</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Power Protocol · Built on Ronin · Contract: 0x9dc4...1223</span>
+    <div class="soc-row">
+      <a class="soc" href="#" aria-label="Twitter">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a class="soc" href="#" aria-label="Discord">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.042.032.05a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+      </a>
+      <a class="soc" href="#" aria-label="Telegram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<div class="modal-bg" id="connectModal">
+  <div class="modal">
+    <button class="m-close" onclick="closeModal()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="logo-bolt" style="width:44px;height:44px;margin:0 auto 18px;border-radius:10px;">
+      <svg viewBox="0 0 20 24" fill="white" width="22" height="26"><polygon points="12,1 4,13 10,13 8,23 18,11 12,11"/></svg>
+    </div>
+    <h2 id="mTitle">Connect Wallet</h2>
+    <p id="mSub">Access Power Protocol · Ethereum & Ronin</p>
+    <div class="w-opts">
+      <div class="w-opt" onclick="connectW('MetaMask')">
+        <div class="w-ico" style="background:#FF6B0018;">🦊</div>
+        <div><div class="w-name">MetaMask</div><div class="w-type">Browser Extension · Recommended</div></div>
+        <svg class="w-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+      <div class="w-opt" onclick="connectW('WalletConnect')">
+        <div class="w-ico" style="background:#3B99FC18;">🔗</div>
+        <div><div class="w-name">WalletConnect</div><div class="w-type">Mobile & Desktop</div></div>
+        <svg class="w-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+      <div class="w-opt" onclick="connectW('Ronin Wallet')">
+        <div class="w-ico" style="background:#0052FF18;">🔵</div>
+        <div><div class="w-name">Ronin Wallet</div><div class="w-type">Native · Ronin Network</div></div>
+        <svg class="w-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+      <div class="w-opt" onclick="connectW('Coinbase Wallet')">
+        <div class="w-ico" style="background:#0052FF18;">💙</div>
+        <div><div class="w-name">Coinbase Wallet</div><div class="w-type">Browser Extension</div></div>
+        <svg class="w-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const cv = document.getElementById('bgc');
+const cx = cv.getContext('2d');
+let W, H, nodes = [];
+
+function resize() {
+  W = cv.width = window.innerWidth;
+  H = cv.height = window.innerHeight;
+  nodes = [];
+  const n = Math.floor(W * H / 18000);
+  for (let i = 0; i < n; i++) {
+    nodes.push({
+      x: Math.random() * W, y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
+      r: 0.8 + Math.random() * 1.4,
+      op: 0.2 + Math.random() * 0.5,
+      hue: Math.random() > 0.5 ? 190 : 270
+    });
+  }
+}
+
+function draw() {
+  cx.clearRect(0, 0, W, H);
+  nodes.forEach((a, i) => {
+    nodes.forEach((b, j) => {
+      if (j <= i) return;
+      const dx = a.x - b.x, dy = a.y - b.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 140) {
+        const op = (1 - dist / 140) * 0.06;
+        cx.beginPath();
+        cx.moveTo(a.x, a.y);
+        cx.lineTo(b.x, b.y);
+        cx.strokeStyle = `rgba(0,200,255,${op})`;
+        cx.lineWidth = 0.5;
+        cx.stroke();
+      }
+    });
+    cx.beginPath();
+    cx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
+    cx.fillStyle = `hsla(${a.hue},100%,65%,${a.op})`;
+    cx.fill();
+    a.x += a.vx;
+    a.y += a.vy;
+    if (a.x < 0 || a.x > W) a.vx *= -1;
+    if (a.y < 0 || a.y > H) a.vy *= -1;
+  });
+  requestAnimationFrame(draw);
+}
+
+window.addEventListener('resize', resize);
+resize(); draw();
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+function openModal() { document.getElementById('connectModal').classList.add('show'); }
+function closeModal() { document.getElementById('connectModal').classList.remove('show'); }
+
+document.getElementById('connectModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+function connectW(name) {
+  document.getElementById('mTitle').textContent = 'Connecting…';
+  document.getElementById('mSub').textContent = `Opening ${name}, please approve…`;
+  setTimeout(() => {
+    document.getElementById('mTitle').textContent = '⚡ Connected!';
+    document.getElementById('mSub').textContent = `${name} connected to Power Protocol`;
+    setTimeout(closeModal, 1600);
+  }, 1200);
+}
+
+function doCopy() {
+  navigator.clipboard.writeText('0x9dc44ae5be187eca9e2a67e33f27a4c91cea1223').then(() => {
+    const b = document.querySelector('.copy-btn');
+    b.textContent = 'Copied!';
+    setTimeout(() => b.textContent = 'Copy', 2000);
+  });
+}
+
+function checkElig() {
+  const v = document.getElementById('claimIn').value.trim();
+  if (!v) { openModal(); return; }
+  const b = event.target;
+  b.textContent = 'Checking…';
+  b.disabled = true;
+  setTimeout(() => {
+    b.textContent = 'Check';
+    b.disabled = false;
+    alert(`Address ${v.slice(0,6)}…${v.slice(-4)} verified against snapshot. Connect wallet to claim your $POWER.`);
+  }, 1400);
+}
+
+function togFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const open = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!open) item.classList.add('open');
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
+
+</body>
+</html>
